@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "GeekieAnswers",
+    "description": "Shows the correct answers on geekie froms",
+    "version": "1.0",
+    "author": "Dark",
+    "icons": {
+        "16": "/img/icon_16.png",
+        "48": "/img/icon_48.png",
+        "128": "/img/icon_128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/img/icon_16.png",
+            "48": "/img/icon_48.png",
+            "128": "/img/icon_128.png"
+        },
+        "default_title": "GeekieAnswers",
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://alunos.geekielab.geekie.com.br/*"],
+            "js": ["js/main.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["https://alunos.geekielab.geekie.com.br/*"],
+            "resources": ["js/AnswerResolver.js", "img/correctIcon.png"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
