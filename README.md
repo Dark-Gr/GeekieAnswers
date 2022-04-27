@@ -1,4 +1,4 @@
-# GeekieAnswers
+# <img src="./img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers
 GeekieAnswers é uma extensão criada para a plataforma Geekie e é capaz de identificar as respostas corretas de deveres de casa (planos de estudos não suportados)
 e mostrá-las a você assim como a adição de um botão que pode mostrar a solução, tudo antes de responder a questão.
 
