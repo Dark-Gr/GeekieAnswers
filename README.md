@@ -11,8 +11,7 @@ Para utilizar a extensão basta entrar na Geekie e abrir uma atividade que estej
 Atividades na categoria planos de estudo não são suportadas pois funcionam de maneira diferente e, até o momento não consegui encontrar uma maneira de extrair a resposta correta.
 
 ## Instalação
-**TODO: Add example images**
-1. Na página inicial do repositório [GeekieAnswers](https://github.com/Dark-Gr/GeekieAnswers) clique em "code" e "download ZIP".
+1. Na página inicial do repositório clique [Releases](https://github.com/Dark-Gr/GeekieAnswers/releases) e baixe o zip da última versão.
 2. Extraia o arquivo ZIP, o que resultará em uma pasta, salve ela em um lugar de sua preferência.
 3. No chrome, vá para configurações clicando nos três pontos no canto superior direito -> configurações.
 4. Já nas configurações, no canto esquerdo clique em extensões, isso abrirá uma nova aba.
