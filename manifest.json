@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "GeekieAnswers",
     "description": "Shows the correct answers on geekie froms",
-    "version": "1.0",
+    "version": "1.1",
     "author": "Dark",
     "icons": {
         "16": "/img/icon_16.png",
@@ -24,13 +24,20 @@
             "js": ["js/main.js"]
         }
     ],
+    "background": {
+        "service_worker": "js/Update.js"
+    },
     "web_accessible_resources": [
         {
             "matches": ["https://alunos.geekielab.geekie.com.br/*"],
             "resources": ["js/AnswerResolver.js", "img/correctIcon.png"]
         }
     ],
+    "host_permissions": [
+        "https://www.github.com/*"
+    ],
     "permissions": [
-        "storage"
+        "storage",
+        "notifications"
     ]
 }
