@@ -3,10 +3,26 @@ var autoAnswerOption = document.getElementById("auto-answer-checkbox");
 
 function loadOptions() {
     chrome.storage.sync.get(["enabled", "autoAnswer"], function(result) {
-        console.log(result);
+        if(!result) {
+            loadDefaultOptions();
+            return;
+        }
+
         enabledOption.checked = result.enabled;
         autoAnswerOption.checked = result.autoAnswer;
     });
+}
+
+function loadDefaultOptions() {
+    var data = {
+        enabled: true,
+        autoAnswer: false
+    };
+
+    chrome.storage.set(data);
+
+    enabledOption.checked = true;
+    autoAnswerOption.checked = false;
 }
 
 function saveOptions() {
