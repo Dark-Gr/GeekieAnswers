@@ -20,6 +20,9 @@ Atividades na categoria planos de estudo não são suportadas pois funcionam de 
 7. Uma caixa de diálogo abrirá solicitando uma pasta, selecione a pasta que você extraiu no passo 2.
 8. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
 
+## Atualizando
+Para atualizar a extensão apenas substitua a pasta da versão anterior pela nova que você baixou, caso queira pôr a nova pasta em um lugar diferente da anterior 
+(ou mesmo mudar o nome da pasta) certifique-se de repetir o processo de instalação apartir da etapa 3, após isso clique no ícone de reload para recarregar a extensão.
 
 ## Contribuindo
 O código fonte da extensão está aberto a qualquer um que queira utilizá-lo. \
