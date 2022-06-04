@@ -19,7 +19,7 @@ function loadDefaultOptions() {
         autoAnswer: false
     };
 
-    chrome.storage.set(data);
+    chrome.storage.sync.set(data);
 
     enabledOption.checked = true;
     autoAnswerOption.checked = false;
@@ -34,7 +34,7 @@ function saveOptions() {
     chrome.storage.sync.set(data);
 }
 
+loadOptions();
+
 enabledOption.onchange = saveOptions;
 autoAnswerOption.onchange = saveOptions;
-
-loadOptions();

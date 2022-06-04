@@ -106,6 +106,7 @@ function resetSolutionVisiblitiy() {
     if(!isVisible) { 
         solution.classList.add("ng-hide"); 
         showSolutionButton.innerHTML = "Mostrar solução";
+        showCorrectMarkButton.innerHTML = "Mostrar resposta";
     }
 }
 
@@ -127,7 +128,7 @@ function toggleMark() {
 
     if(correctAnswerMark.classList.contains("ng-hide")) {
         correctAnswerMark.classList.remove("ng-hide");
-        correctChoiceText.style = "color: rgb(59, 209, 99) !important;";
+        correctChoiceText.style = "filter: invert(67%) sepia(57%) saturate(571%) hue-rotate(80deg) brightness(93%) contrast(84%);"; 
         showCorrectMarkButton.innerHTML = "Esconder Resposta";
     } else {
         correctAnswerMark.classList.add("ng-hide");
@@ -164,6 +165,8 @@ function showCorrectAnswer() {
 
         resetSolutionVisiblitiy();
         markCorrectChoice();
+
+        showCorrectMarkButton.innerHTML = "Mostrar resposta";
     };
 }
 
