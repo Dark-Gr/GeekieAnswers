@@ -11,6 +11,7 @@ Para utilizar a extensão basta entrar na Geekie e abrir uma atividade que estej
 Atividades na categoria "planos de estudo" não são suportadas, pois funcionam de maneira diferente e, até o momento não consegui encontrar uma maneira de extrair a resposta correta.
 
 ## Instalação
+### Computadores
 1. Na página inicial do repositório clique [Releases](https://github.com/Dark-Gr/GeekieAnswers/releases) e baixe o zip da última versão.
 2. Extraia o arquivo ZIP, o que resultará numa pasta, salve ela num lugar da sua preferência.
 3. No chrome, vá para configurações clicando nos três pontos no canto superior direito → configurações.
@@ -19,6 +20,14 @@ Atividades na categoria "planos de estudo" não são suportadas, pois funcionam 
 6. Após ativar o modo desenvolvedor no canto superior esquerdo, clique em "carregar sem compactação".
 7. Uma caixa de diálogo abrirá solicitando uma pasta, selecione a pasta que você extraiu no passo 2.
 8. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
+
+### Dispositivos Móveis
+1. Na página inicial do repositório clique [Releases](https://github.com/Dark-Gr/GeekieAnswers/releases) e baixe o zip da última versão.
+2. Salve este arquivo onde desejar.
+3. Instale o aplicativo [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pt_BR&gl=US).
+4. Abra o aplicativo e clique nos três pontos no canto superior direito, após isso vá em extensões.
+6. Selecione a opção "+ (from .zip/.crx/.user.js)" e selecione o arquivo zip baixado no passo 1. Caso está opção não esteja visível habilite o modo desenvolvedor.
+7. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
 
 ## Atualizando
 Para atualizar a extensão apenas substitua a pasta da versão anterior pela nova que você baixou, caso queira pôr a nova pasta num lugar diferente da anterior 
