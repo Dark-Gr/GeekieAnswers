@@ -1,4 +1,14 @@
 # <img src="./img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers
+
+<div align="center">
+  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Dark-Gr/GeekieAnswers/total?color=%3Cimg%20alt%3D%22GitHub%20issues%22%20src%3D%22https%3A%2F%2Fimg.shields.io%2Fgithub%2Fissues-raw%2FDark-Gr%2FGeekieAnswers%3Fcolor%3D%25232239ab%26style%3Dfor-the-badge%22%3E&style=for-the-badge">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/Dark-Gr/GeekieAnswers?color=%232239ab&style=for-the-badge">
+  <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/Dark-Gr/GeekieAnswers?color=%235022ab&style=for-the-badge">
+  <img alt="GitHub manifest version" src="https://img.shields.io/github/manifest-json/v/Dark-Gr/GeekieAnswers?style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Dark-Gr/GeekieAnswers?color=%232244ab&style=for-the-badge">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Dark-Gr/GeekieAnswers?style=for-the-badge">
+</div>
+
 GeekieAnswers é uma extensão criada para a plataforma Geekie e pode identificar as respostas corretas de deveres de casa (planos de estudos não suportados)
 e mostrá-las a você assim como a adição de um botão que pode mostrar a solução, tudo antes de responder a questão.
 
