@@ -1,4 +1,4 @@
-# <img src="./img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers
+# <img src="./public/img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers
 
 <div align="center">
   <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Dark-Gr/GeekieAnswers/total?color=%3Cimg%20alt%3D%22GitHub%20issues%22%20src%3D%22https%3A%2F%2Fimg.shields.io%2Fgithub%2Fissues-raw%2FDark-Gr%2FGeekieAnswers%3Fcolor%3D%25232239ab%26style%3Dfor-the-badge%22%3E&style=for-the-badge">
@@ -9,7 +9,7 @@
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Dark-Gr/GeekieAnswers?label=Contribuidores&style=for-the-badge">
 </div>
 
-GeekieAnswers é uma extensão criada para a plataforma Geekie e pode identificar as respostas corretas de deveres de casa (planos de estudos não suportados)
+GeekieAnswers é uma extensão criada para a plataforma Geekie e pode identificar as respostas corretas
 e mostrá-las a você assim como a adição de um botão que pode mostrar a solução, tudo antes de responder a questão.
 
 ## Objetivo
@@ -38,6 +38,8 @@ Atividades na categoria "planos de estudo" não são suportadas, pois funcionam 
 4. Abra o aplicativo e clique nos três pontos no canto superior direito, após isso vá em extensões.
 6. Selecione a opção "+ (from .zip/.crx/.user.js)" e selecione o arquivo zip baixado no passo 1. Caso está opção não esteja visível habilite o modo desenvolvedor.
 7. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
+
+**Nota: É necessário usar o Kiwi Browser para que a extensão funcione!**
 
 ## Atualizando
 Para atualizar a extensão apenas substitua a pasta da versão anterior pela nova que você baixou, caso queira pôr a nova pasta num lugar diferente da anterior 
