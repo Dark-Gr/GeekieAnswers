@@ -1,9 +1,9 @@
-var enabledOption = document.getElementById("enabled-checkbox");
-var autoAnswerOption = document.getElementById("auto-answer-checkbox");
+var enabledOption = document.getElementById("enabled-checkbox") as HTMLInputElement;
+var autoAnswerOption = document.getElementById("auto-answer-checkbox") as HTMLInputElement;
 
 function loadOptions() {
-    chrome.storage.sync.get(["enabled", "autoAnswer"], function(result) {
-        if(!result) {
+    chrome.storage.sync.get(["enabled"], function(result) {
+        if(!result || result == {} || !("enabled" in result)) {
             loadDefaultOptions();
             return;
         }
@@ -16,19 +16,16 @@ function loadOptions() {
 function loadDefaultOptions() {
     var data = {
         enabled: true,
-        autoAnswer: false
     };
 
     chrome.storage.sync.set(data);
 
     enabledOption.checked = true;
-    autoAnswerOption.checked = false;
 }
 
 function saveOptions() {
     var data = {
         enabled: enabledOption.checked,
-        autoAnswer: autoAnswerOption.checked
     };
 
     chrome.storage.sync.set(data);
@@ -37,4 +34,3 @@ function saveOptions() {
 loadOptions();
 
 enabledOption.onchange = saveOptions;
-autoAnswerOption.onchange = saveOptions;
