@@ -48,3 +48,7 @@ Para atualizar a extensão apenas substitua a pasta da versão anterior pela nov
 ## Contribuindo
 O código fonte da extensão está aberto a qualquer um que queira utilizá-lo. \
 Caso encontre algum bug ou queira sugerir uma adição sinta-se livre para abrir uma issue ou um pull request.
+
+## Contribuidores
+[Dark](https://github.com/Dark-Gr)
+[Caix0te](https://github.com/Caix0te)
