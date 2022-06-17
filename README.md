@@ -41,6 +41,11 @@ Atividades na categoria "planos de estudo" não são suportadas, pois funcionam 
 
 **Nota: É necessário usar o Kiwi Browser para que a extensão funcione!**
 
+## Por que o GeekieAnswers não funciona em alguns planos de estudos?
+Acontece que alguns planos de estudos são recomendados pela Geekie (Sem o ponto vermelho), enquanto outros são recomendados por professores (Com o ponto vermelho), 
+estes recomendados pela Geekie não possuem a resposta correta salva no código do site, por isso não é possível, ao menos atualmente, mostrar a resposta correta. Sendo 
+assim, para evitar confusões, a extensão fica desativada nesses casos.
+
 ## Atualizando
 Para atualizar a extensão apenas substitua a pasta da versão anterior pela nova que você baixou, caso queira pôr a nova pasta num lugar diferente da anterior 
 (ou mesmo mudar o nome da pasta) certifique-se de repetir o processo de instalação a partir da etapa 3, após isso clique no ícone de reload para recarregar a extensão.
@@ -50,5 +55,5 @@ O código fonte da extensão está aberto a qualquer um que queira utilizá-lo. 
 Caso encontre algum bug ou queira sugerir uma adição sinta-se livre para abrir uma issue ou um pull request.
 
 ## Contribuidores
-[Dark](https://github.com/Dark-Gr)
-[Caix0te](https://github.com/Caix0te)
+[Dark](https://github.com/Dark-Gr) - Desenvolvedor \
+[Caix0te](https://github.com/Caix0te) - Tester
