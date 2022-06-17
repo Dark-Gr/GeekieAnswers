@@ -12,6 +12,9 @@ chrome.storage.sync.get(["enabled"], function (result) {
     else
         chrome.storage.sync.set({ enabled: true });
     if (enabled) { // Check if extension is enabled before injecting it
+        if (document.location.href.endsWith("homework") || document.location.href.endsWith("home") ||
+            document.location.href.endsWith("explore") || document.location.href.endsWith("proficiency"))
+            return;
         script.onload = function () {
             var correctMarkIcon = chrome.runtime.getURL("/public/img/correctIcon.png"); // Load the correct icon
             // Creates and dispatch the event to load the extension on the page

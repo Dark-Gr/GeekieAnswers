@@ -25,7 +25,7 @@ class QuestionInfo {
             if(choiceId == id) return choice;
         }
 
-        return this.choices[0];
+        return null;
     }
 
     private getChoices(): HTMLDivElement[] {
@@ -250,5 +250,6 @@ class GeekieAnswers {
 var geekieAnswers: GeekieAnswers;
 
 document.addEventListener("loadGeekieAnswers", (event: CustomEvent) => {
+    if(angular.element(document.getElementsByClassName("item")[0]).scope()["diagnosis"]["recommendedByGeekie"]) return;
     geekieAnswers = new GeekieAnswers(event.detail["correctMarkIcon"]);
 });
