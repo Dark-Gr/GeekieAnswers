@@ -26,6 +26,9 @@ class QuestionInfo {
         }
         return output;
     }
+    isSolutionVisible() {
+        return angular.element(this.item).scope()["isSolutionVisible"]();
+    }
     isHomework() {
         return this.isHomeWork;
     }
@@ -43,6 +46,8 @@ class UIManager {
         this.showAnswerButton = null;
         this.elementToAppend = elementToAppend;
         this.correctIcon = correctIcon;
+        this.answerShown = false;
+        this.solutionShown = false;
         this.setup = false;
     }
     setupUI() {
@@ -123,14 +128,14 @@ class UIManager {
         var text = choice.getElementsByClassName("geekieui-custom-form")[0].getElementsByClassName("radio-container")[0].getElementsByClassName("radio")[0].getElementsByClassName("content")[0].children[0];
         return text;
     }
-    update() {
+    update(solutionVisible) {
         if (this.answerShown && this.showAnswerButton.innerHTML != "Esconder Resposta")
             this.showAnswerButton.innerHTML = "Esconder Resposta";
         else if (this.showAnswerButton.innerHTML != "Mostrar Resposta")
             this.showAnswerButton.innerHTML = "Mostrar Resposta";
-        if (this.solutionShown && this.showSolutionButton.innerHTML != "Esconder Solução")
+        if ((this.solutionShown || solutionVisible))
             this.showSolutionButton.innerHTML = "Esconder Solução";
-        else if (this.showSolutionButton.innerHTML != "Mostrar Solução")
+        else
             this.showSolutionButton.innerHTML = "Mostrar Solução";
     }
     destroy() {
@@ -157,7 +162,7 @@ class GeekieAnswers {
         this.stepElement = document.getElementsByClassName("step")[0];
         this.uiManager = new UIManager(this.stepElement, correctIcon);
         this.observer = new MutationObserver((mutators) => this.update(mutators));
-        this.observer.observe(this.stepElement, { childList: true, subtree: true, characterData: true });
+        this.observer.observe(this.stepElement, { childList: true, subtree: true, characterData: true, attributes: true });
         this.update();
     }
     update(mutators) {
@@ -172,7 +177,7 @@ class GeekieAnswers {
             this.info = new QuestionInfo();
             if (!this.uiManager.isSetup())
                 this.uiManager.setupUI();
-            this.uiManager.update();
+            this.uiManager.update(this.info.isSolutionVisible());
         }
         else
             this.uiManager.destroy();
@@ -183,8 +188,11 @@ class GeekieAnswers {
 }
 var geekieAnswers;
 document.addEventListener("loadGeekieAnswers", (event) => {
-    if (angular.element(document.getElementsByClassName("item")[0]).scope()["diagnosis"]["recommendedByGeekie"])
-        return;
+    if (document.getElementsByClassName("item")[0]) {
+        var scope = angular.element(document.getElementsByClassName("item")[0]).scope();
+        if ("diagnosis" in scope && scope["diagnosis"]["recommendedByGeekie"])
+            return;
+    }
     geekieAnswers = new GeekieAnswers(event.detail["correctMarkIcon"]);
 });
 //# sourceMappingURL=AnswerResolver.js.map
