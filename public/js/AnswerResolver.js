@@ -129,9 +129,9 @@ class UIManager {
         return text;
     }
     update(solutionVisible) {
-        if (this.answerShown && this.showAnswerButton.innerHTML != "Esconder Resposta")
+        if (this.answerShown && document.getElementById("GeekieAnswersChoiceMark") && document.getElementById("GeekieAnswersChoiceMark").classList.contains("ng-hide"))
             this.showAnswerButton.innerHTML = "Esconder Resposta";
-        else if (this.showAnswerButton.innerHTML != "Mostrar Resposta")
+        else
             this.showAnswerButton.innerHTML = "Mostrar Resposta";
         if ((this.solutionShown || solutionVisible))
             this.showSolutionButton.innerHTML = "Esconder Solução";
