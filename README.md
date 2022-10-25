@@ -1,4 +1,4 @@
-# <img src="./public/img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers
+<div align="center"><h1><img src="./public/img/icon_48.png" alt="logo" width="30" height="30"> GeekieAnswers</h1></div>
 
 <div align="center">
   <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Dark-Gr/GeekieAnswers/total?color=%3Cimg%20alt%3D%22GitHub%20issues%22%20src%3D%22https%3A%2F%2Fimg.shields.io%2Fgithub%2Fissues-raw%2FDark-Gr%2FGeekieAnswers%3Fcolor%3D%25232239ab%26style%3Dfor-the-badge%22%3E&style=for-the-badge">
@@ -31,24 +31,23 @@ Atividades na categoria "planos de estudo" não são suportadas, pois funcionam 
 7. Uma caixa de diálogo abrirá solicitando uma pasta, selecione a pasta que você extraiu no passo 2.
 8. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
 
-### Dispositivos Móveis
-1. Na página inicial do repositório clique [Releases](https://github.com/Dark-Gr/GeekieAnswers/releases) e baixe o zip da última versão.
+### Dispositivos Móveis (Celulares/Tablets)
+**Nota: Esse passo a passo funciona apenas para dispositivos android, usuários de Iphones terão que procurar uma alternativa ao Kiwi Browser**
+1. Na página inicial do repositório clique [Releases](https://github.com/Dark-Gr/GeekieAnswers/releases) e baixe o zip da última versão (normalmente fica no final da página).
 2. Salve este arquivo onde desejar.
-3. Instale o aplicativo [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pt_BR&gl=US).
+3. Instale o aplicativo [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pt_BR&gl=US) pela Play Store.
 4. Abra o aplicativo e clique nos três pontos no canto superior direito, após isso vá em extensões.
-6. Selecione a opção "+ (from .zip/.crx/.user.js)" e selecione o arquivo zip baixado no passo 1. Caso está opção não esteja visível habilite o modo desenvolvedor.
+6. Selecione a opção "+ (from .zip/.crx/.user.js)" e selecione o arquivo zip baixado anteriormente. Caso está opção não esteja visível habilite o modo desenvolvedor.
 7. Pronto, a extensão já está instalada e ativada, pronta para ser utilizada.
 
 **Nota: É necessário usar o Kiwi Browser para que a extensão funcione!**
 
 ## Por que o GeekieAnswers não funciona em alguns planos de estudos?
-Acontece que alguns planos de estudos são recomendados pela Geekie (Sem o ponto vermelho), enquanto outros são recomendados por professores (Com o ponto vermelho), 
-estes recomendados pela Geekie não possuem a resposta correta salva no código do site, por isso não é possível, ao menos atualmente, mostrar a resposta correta. Sendo 
-assim, para evitar confusões, a extensão fica desativada nesses casos.
+Acontece que alguns planos de estudos são recomendados pela Geekie (Sem o ponto vermelho), enquanto outros são recomendados por professores (Com o ponto vermelho), estes recomendados pela Geekie não possuem a resposta correta salva no código do site, por isso não é possível, ao menos atualmente, mostrar a resposta correta. Sendo assim, para evitar confusões, a extensão fica desativada nesses casos.
 
 ## Atualizando
 Para atualizar a extensão apenas substitua a pasta da versão anterior pela nova que você baixou, caso queira pôr a nova pasta num lugar diferente da anterior 
-(ou mesmo mudar o nome da pasta) certifique-se de repetir o processo de instalação a partir da etapa 3, após isso clique no ícone de reload para recarregar a extensão.
+(ou mesmo mudar o nome da pasta) certifique-se de repetir o processo de instalação a partir da etapa 3 (ou 4 para dispositivos móveis), após isso clique no ícone de reload para recarregar a extensão.
 
 ## Contribuindo
 O código fonte da extensão está aberto a qualquer um que queira utilizá-lo. \
