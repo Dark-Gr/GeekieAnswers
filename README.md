@@ -5,7 +5,6 @@
   <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/Dark-Gr/GeekieAnswers?color=%23285399&label=Issues%20abertas&style=for-the-badge">
   <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/Dark-Gr/GeekieAnswers?color=%23572899&label=Issues%20Fechadas&style=for-the-badge">
   <img alt="GitHub manifest version" src="https://img.shields.io/github/manifest-json/v/Dark-Gr/GeekieAnswers?label=Vers%C3%A3o&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Dark-Gr/GeekieAnswers?color=%23289799&label=%C3%9Altimo%20Commit&style=for-the-badge">
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Dark-Gr/GeekieAnswers?label=Contribuidores&style=for-the-badge">
 </div>
 
